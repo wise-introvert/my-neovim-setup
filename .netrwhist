@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/home/wise-introvert/Container/Work/breeze/frontend/web/breeze-webapp/src/app/containers/menu'
+let g:netrw_dirhist_6='/home/wise-introvert/.config/nvim'
+let g:netrw_dirhist_5='/home/wise-introvert/Container/Projects/the-road-forks/frontend/trf-app'
+let g:netrw_dirhist_4='/home/wise-introvert/Container/Projects/the-road-forks/frontend/trf-app/public'
+let g:netrw_dirhist_3='/home/wise-introvert/Container/Projects/the-road-forks/frontend/trf-app'
+let g:netrw_dirhist_2='/home/wise-introvert/Container/Projects/the-road-forks/frontend/trf-app/src'
+let g:netrw_dirhist_1='/home/wise-introvert/Container/Projects/the-road-forks/frontend/trf-app'
+let g:netrw_dirhist_0='/home/wise-introvert/Container/Projects/the-road-forks/frontend/trf-app/public'
+let g:netrw_dirhist_9='/home/wise-introvert/Container/Projects/the-road-forks/frontend/trf-app'
+let g:netrw_dirhist_8='/home/wise-introvert/Container/Projects/the-road-forks/frontend/trf-app/src'
