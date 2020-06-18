@@ -14,6 +14,14 @@ Plug 'ianks/vim-tsx'
 " typescript-vim will do all the coloring for typescript keywords
 Plug 'leafgarland/typescript-vim'
 Plug 'scrooloose/nerdtree'
+Plug 'vim-airline/vim-airline'
+Plug 'jiangmiao/auto-pairs'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'tpope/vim-surround'
+Plug 'scrooloose/nerdcommenter'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'neomake/neomake'
+Plug 'morhetz/gruvbox'
 Plug 'tkhren/vim-fake'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
@@ -65,3 +73,8 @@ vnoremap <silent><C-Left> :<C-U>call search('\C\<\<Bar>\%(^\<Bar>[^'.g:camelchar
 vnoremap <silent><C-Right> <Esc>`>:<C-U>call search('\C\<\<Bar>\%(^\<Bar>[^'.g:camelchar.']\@<=\)['.g:camelchar.']\<Bar>['.g:camelchar.']\ze\%([^'.g:camelchar.']\&\>\@!\)\<Bar>\%$','W')<CR>v`<o
 map <Leader>y "*y
 map <Leader>p "*p
+let g:airline_solarized_bg='dark'
+let g:neomake_python_enabled_makers = ['pylint']
+colorscheme gruvbox
+set background=dark
+call neomake#configure#automake('nrwi', 500)
