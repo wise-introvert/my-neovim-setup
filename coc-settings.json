@@ -3,6 +3,8 @@
   "coc.preferences.snippetStatusText": "🌈",
   "coc.preferences.formatOnType": false,
 
+  "python.jediEnabled": true,
+
   "diagnostic.infoSign": "i",
   "diagnostic.hintSign": "*",
   "diagnostic.warningSign": "!",
@@ -40,7 +42,14 @@
   "coc.source.emoji.filetypes": ["markdown", "gitcommit"],
 
   "eslint.enable": true,
-  "eslint.filetypes": ["javascript", "javascript.jsx", "javascriptreact", "typescript", "typescriptreact", "typescript.tsx"],
+  "eslint.filetypes": [
+    "javascript",
+    "javascript.jsx",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "typescript.tsx"
+  ],
   "eslint.autoFix": false,
   "eslint.autoFixOnSave": false,
 
