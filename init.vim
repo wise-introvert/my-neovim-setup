@@ -13,14 +13,18 @@ Plug 'ianks/vim-tsx'
 " by default, if you open tsx file, neovim does not show syntax colors
 " typescript-vim will do all the coloring for typescript keywords
 Plug 'leafgarland/typescript-vim'
+Plug 'https://github.com/itchyny/calendar.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'jiangmiao/auto-pairs'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'tpope/vim-surround'
+Plug 'KabbAmine/vCoolor.vim'
 Plug 'scrooloose/nerdcommenter'
+Plug 'mattn/emmet-vim'
 Plug 'terryma/vim-multiple-cursors'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'neomake/neomake'
 Plug 'morhetz/gruvbox'
 Plug 'tkhren/vim-fake'
@@ -58,6 +62,10 @@ autocmd VimEnter * NERDTree
 let g:prettier#autoformat = 0
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue PrettierAsync
 vnoremap <C-r> "hy:%s/<C-r>h//g<left><left><left>
+nnoremap <C-p> :Files<CR>
+nnoremap <C-o> :Buffers<CR>
+nnoremap <C-g> :GFiles<CR>
+nnoremap <C-f> :Rg
 " Use one of the following to define the camel characters.
 " Stop on capital letters.
 let g:camelchar = "A-Z"
