@@ -14,8 +14,10 @@ Plug 'ianks/vim-tsx'
 " typescript-vim will do all the coloring for typescript keywords
 Plug 'leafgarland/typescript-vim'
 Plug 'https://github.com/itchyny/calendar.vim'
+Plug 'ekalinin/Dockerfile.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
+Plug 'ryanoasis/vim-devicons'
 Plug 'jiangmiao/auto-pairs'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-surround'
@@ -86,3 +88,4 @@ let g:neomake_python_enabled_makers = ['pylint']
 colorscheme gruvbox
 set background=dark
 call neomake#configure#automake('nrwi', 500)
+set encoding=UTF-8
