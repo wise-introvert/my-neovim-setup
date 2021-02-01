@@ -42,6 +42,7 @@ Plug 'maxmellon/vim-jsx-pretty'
 "------------------------ THEME ------------------------
 " most importantly you need a good color scheme to write good code :D
 Plug 'dikiaap/minimalist'
+Plug 'ayu-theme/ayu-vim' " or other package manager
 call plug#end()
 " == VIMPLUG END ================================
 " == AUTOCMD ================================ 
@@ -87,7 +88,12 @@ vnoremap <silent><C-Right> <Esc>`>:<C-U>call search('\C\<\<Bar>\%(^\<Bar>[^'.g:c
 map <Leader>y "*y
 map <Leader>p "*p
 let g:neomake_python_enabled_makers = ['pylint']
-colorscheme gruvbox
+" colorscheme gruvbox
+set termguicolors     " enable true colors support
+" let ayucolor="light"  " for light version of theme
+" let ayucolor="mirage" " for mirage version of theme
+let ayucolor="dark"   " for dark version of theme
+colorscheme ayu
 set background=dark
 call neomake#configure#automake('nrwi', 500)
 set encoding=UTF-8
