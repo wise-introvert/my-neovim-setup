@@ -42,6 +42,7 @@ Plug 'maxmellon/vim-jsx-pretty'
 "------------------------ THEME ------------------------
 " most importantly you need a good color scheme to write good code :D
 Plug 'dikiaap/minimalist'
+Plug 'sainnhe/sonokai'
 call plug#end()
 " == VIMPLUG END ================================
 " == AUTOCMD ================================ 
@@ -87,7 +88,16 @@ vnoremap <silent><C-Right> <Esc>`>:<C-U>call search('\C\<\<Bar>\%(^\<Bar>[^'.g:c
 map <Leader>y "*y
 map <Leader>p "*p
 let g:neomake_python_enabled_makers = ['pylint']
-colorscheme gruvbox
-set background=dark
+" colorscheme gruvbox
+" set background=dark
+" Important!!
+if has('termguicolors')
+  set termguicolors
+endif
+" The configuration options should be placed before `colorscheme sonokai`.
+let g:sonokai_style = 'atlantis'
+let g:sonokai_enable_italic = 1
+let g:sonokai_disable_italic_comment = 1
+colorscheme sonokai
 call neomake#configure#automake('nrwi', 500)
 set encoding=UTF-8
