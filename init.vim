@@ -17,6 +17,7 @@ Plug 'https://github.com/itchyny/calendar.vim'
 Plug 'ekalinin/Dockerfile.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'APZelos/blamer.nvim'
+Plug 'nullvoxpopuli/coc-ember', {'do': 'yarn install --frozen-lockfile'}
 Plug 'vim-airline/vim-airline'
 Plug 'ryanoasis/vim-devicons'
 Plug 'jiangmiao/auto-pairs'
